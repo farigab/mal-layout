@@ -1,0 +1,218 @@
+@import "https://malscraper.azurewebsites.net/covers/anime/farigab/presets/dataimagelinkbefore";
+@import "https://malscraper.azurewebsites.net/covers/manga/farigab/presets/dataimagelinkbefore";
+@import "https://farigab.github.io/mal-layout/grid-mal.css";
+@import "https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap";
+
+
+/*WALLPAPERS
+    To change background images: delete what's in the parenthesis. Upload 
+    the new background to Imgur or a similar site, then copy the direct link (or Original GIF link if it's animated) and paste it into the parenthesis. Must have .jpg or another extension at the end (.gif or .png). Save.*/
+body,
+body.ownlist {
+    background-image: url(https://media1.tenor.com/m/Qdy5WLrVYksAAAAd/melty-blood-type-lumina.gif);
+}
+
+/*BANNER AVATAR
+Change the first "center" to "left" or "right" to move the picture position. Change "cover" to "contain" or remove it to change how the image fills the avatar.*/
+.list-table .list-table-header:after {
+    background-image: url(https://i.imgur.com/c6uaFsI.gif);
+    background-position: center cfenter; 
+    background-size: cover !important;
+}
+
+/*BANNER QUOTE*/
+.cover-block::before {
+    content: "We don't choose the path we take because of the sins we carry. But we carry our sins on the path we choose!"
+}
+
+/*BANNER BACKGROUND AND HEIGHT
+    If the image doesn't fit, increase the height and/or change "cover" to "contain". You may want to lower cover pics after (scroll down).*/
+.list-unit.watching .list-status-title:after,
+.list-unit.reading .list-status-title:after,
+.list-unit.completed .list-status-title:after,
+.list-unit.onhold .list-status-title:after,
+.list-unit.dropped .list-status-title:after,
+.list-unit.plantowatch .list-status-title:after,
+.list-unit.plantoread .list-status-title:after,
+.list-unit.all_anime .list-status-title:after {
+    background-image: url(https://i.imgur.com/8876k2V.gif);
+    background-size: cover !important;
+    height: 500px !important;
+    width: 100% !important;
+}
+
+/*MOVE COVER PICS UP OR DOWN
+    Increase 0px to a higher amount like 100px to move the anime preview pics and header (Completed, etc) down. -480px brings them up to the banner buttons.*/
+.list-unit .list-status-title .text,
+.list-item {
+    top: 0px;
+}
+
+/*BANNER BUTTON BACKGROUNDS 
+    The first image link in parenthesis is the still black and white image, the second image link is the animated image (a GIF).*/
+
+/*ALL ANIME BANNER BUTTON*/
+.status-button.all_anime {
+    background-image: url(https://i.imgur.com/FifaLaK.gif);
+}
+
+.status-button.all_anime:hover,
+.status-button.all_anime.on {
+    background-image: url(https://i.imgur.com/FifaLaK.gif);
+}
+
+/*CURRENT BANNER BUTTON*/
+.status-button.watching,
+.status-button.reading {
+    background-image: url(https://media.tenor.com/47_TR9UGqh4AAAAM/fate-rin-tohsaka.gif);
+}
+
+.status-button.watching:hover,
+.status-button.watching.on,
+.status-button.reading:hover,
+.status-button.reading.on {
+    background-image: url(https://media.tenor.com/47_TR9UGqh4AAAAM/fate-rin-tohsaka.gif);
+}
+
+/*COMPLETED BANNER BUTTON*/
+.status-button.completed {
+    background-image: url(https://media.tenor.com/ZPOudsGtD4cAAAAM/aoko-aozaki-mahoyo.gif);
+}
+
+.status-button.completed:hover,
+.status-button.completed.on {
+    background-image: url(https://media.tenor.com/MWzk-xJxQF0AAAAM/aoko-aozaki-mahoyo.gif);
+}
+
+/*ON HOLD BANNER BUTTON*/
+.status-button.onhold {
+    background-image: url(https://media.tenor.com/gvRZQX7Hw0QAAAAM/shiki-ryougi-blink.gif);
+}
+
+.status-button.onhold:hover,
+.status-button.onhold.on {
+    background-image: url(https://media.tenor.com/AqoIHF6fvlkAAAAM/kara-no-kyoukai-the-garden-of-sinners.gif);
+}
+
+/*DROPPED BANNER BUTTON*/
+.status-button.dropped {
+    background-image: url(https://media.tenor.com/WNrq2Leqb40AAAAM/ryougi-shiki-kara-no-kyoukai.gif);
+}
+
+.status-button.dropped:hover,
+.status-button.dropped.on {
+    background-image: url(https://media.tenor.com/DKVGhSMa120AAAAM/anime-smile.gif);
+}
+
+/*PLANNED BANNER BUTTON*/
+.status-button.plantowatch,
+.status-button.plantoread {
+    background-image: url(https://media.tenor.com/oitnr5tawd0AAAAM/anime-surprise.gif);
+}
+
+.status-button.plantowatch:hover,
+.status-button.plantowatch.on,
+.status-button.plantoread:hover,
+.status-button.plantoread.on {
+    background-image: url(https://media.tenor.com/cGkseWZQZRYAAAAM/anime-happiness.gif);
+}
+
+/*SIDE RENDERS (left and right)
+    To move the renders, adjust the percentage after "left" or "right". You can use negatives. To resize the renders, adjust the percentage after "width". 0% will remove the render.*/
+footer:before {
+    left: -3%;
+    width: 25% !important;
+    background-size: contain !important;
+    background-image: url();
+    background-position: left bottom !important;
+}
+
+footer:after {
+    right: 0%;
+    width: 20% !important;
+    background-size: contain !important;
+    ;
+    background-image: url();
+    background-position: right bottom !important;
+}
+
+/*ANIME/MANGA CONTAINER SETTINGS
+    (TABLE COLORS)
+    You can change the color with rbga colors. Generate RGBA colors here so you can replace the codes below:
+    https://www.hexcolortool.com/
+    First set of colors= entire table. Second = banner. Third = default container behind an anime. Fourth = container when you point to it. Fifth = upper left menu. Sixth = top. You can set the last digit to zero to make it completely transparent.*/
+.list-unit {
+    background-color: rgba(0, 0, 0, .6);
+}
+
+.status-menu-container {
+    background-color: rgba(0, 0, 0, .4);
+}
+
+.list-table .list-table-data {
+    background-color: rgba(0, 0, 0, .2) !important;
+}
+
+.list-table .list-table-data:hover {
+    background-color: rgba(0, 0, 0, .4) !important;
+}
+
+.list-menu-float .icon-menu {
+    background-color: rgba(0, 0, 0, .4) !important;
+}
+
+.header {
+    background: linear-gradient(rgba(0, 0, 0, .4), transparent) !important;
+}
+
+/*CUSTOM CURSOR 
+    More here: https://myanimelist.net/forum/?topicid=1903808*/
+body *,
+:not(*) {
+    cursor: url(https://i.imgur.com/j9ZWzyT.png), auto !important;
+}
+
+/*FILTER MENU BACKGROUND*/
+#advanced-options {
+    background-image: url(https://i.imgur.com/h0VRsRc.png) !important;
+}
+
+/*MAL LOGO*/
+.header .header-title {
+    background-image: url(https://imgur.com/E7zWfiY.png) !important;
+}
+
+/*GREYSCALE FOR CUSTOM CATEGORY BUTTONS 
+    Delete this to remove grey from custom buttons.*/
+.status-button.watching,
+.status-button.reading,
+.status-button.completed,
+.status-button.onhold,
+.status-button.dropped,
+.status-button.plantowatch,
+.status-button.plantoread,
+.status-button.all_anime {
+    filter: grayscale(100%);
+}
+
+.status-button.all_anime:hover,
+.status-button.all_anime.on,
+.status-button.plantowatch:hover,
+.status-button.plantowatch.on,
+.status-button.plantoread:hover,
+.status-button.plantoread.on,
+.status-button.dropped:hover,
+.status-button.dropped.on,
+.status-button.onhold:hover,
+.status-button.onhold.on,
+.status-button.completed:hover,
+.status-button.completed.on,
+.status-button.watching:hover,
+.status-button.watching.on,
+.status-button.reading:hover,
+.status-button.reading.on {
+    filter: inherit;
+}
