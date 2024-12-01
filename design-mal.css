@@ -1,0 +1,187 @@
+/* Importações de fontes e estilos externos */
+@import "https://malscraper.azurewebsites.net/covers/anime/farigab/presets/dataimagelinkbefore";
+@import "https://malscraper.azurewebsites.net/covers/manga/farigab/presets/dataimagelinkbefore";
+@import "https://farigab.github.io/mal-layout/grid-mal.css";
+@import "https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap";
+
+/* Variáveis para facilitar ajustes de cores e tamanhos */
+:root {
+    --dark-bg: rgba(0, 0, 0, 0.6);
+    --semi-dark-bg: rgba(0, 0, 0, 0.4);
+    --light-bg: rgba(0, 0, 0, 0.2);
+    --hover-bg: rgba(0, 0, 0, 0.4);
+    --header-bg: linear-gradient(rgba(0, 0, 0, 0.4), transparent);
+}
+
+/* Configurações gerais de fundo e layout */
+body,
+body.ownlist {
+    background-image: url(https://media1.tenor.com/m/Qdy5WLrVYksAAAAd/melty-blood-type-lumina.gif);
+}
+
+/* Estilo do Avatar de Banner */
+.list-table .list-table-header:after {
+    background-image: url(https://i.imgur.com/c6uaFsI.gif);
+    background-position: center;
+    background-size: cover !important;
+}
+
+/* Citação no Banner */
+.cover-block::before {
+    content: "We don't choose the path we take because of the sins we carry. But we carry our sins on the path we choose!";
+}
+
+/* Ajustes de tamanho do banner */
+.list-unit .list-status-title:after {
+    background-image: url(https://i.imgur.com/8876k2V.gif);
+    background-size: cover !important;
+    height: 500px !important;
+    width: 100% !important;
+}
+
+/* Movimentar as imagens de anime para cima ou para baixo */
+.list-unit .list-status-title .text,
+.list-item {
+    top: 0px;
+}
+
+/* Estilos dos Botões de Status */
+.status-button {
+    filter: grayscale(100%);
+}
+
+.status-button:hover,
+.status-button.on {
+    filter: inherit;
+}
+
+/*BANNER BUTTON BACKGROUNDS 
+    The first image link in parenthesis is the still black and white image, the second image link is the animated image (a GIF).*/
+
+/*ALL ANIME BANNER BUTTON*/
+.status-button.all_anime {
+    background-image: url(https://i.imgur.com/FifaLaK.gif);
+}
+
+.status-button.all_anime:hover,
+.status-button.all_anime.on {
+    background-image: url(https://i.imgur.com/FifaLaK.gif);
+}
+
+/*CURRENT BANNER BUTTON*/
+.status-button.watching,
+.status-button.reading {
+    background-image: url(https://media.tenor.com/47_TR9UGqh4AAAAM/fate-rin-tohsaka.gif);
+}
+
+.status-button.watching:hover,
+.status-button.watching.on,
+.status-button.reading:hover,
+.status-button.reading.on {
+    background-image: url(https://media.tenor.com/47_TR9UGqh4AAAAM/fate-rin-tohsaka.gif);
+}
+
+/*COMPLETED BANNER BUTTON*/
+.status-button.completed {
+    background-image: url(https://media.tenor.com/ZPOudsGtD4cAAAAM/aoko-aozaki-mahoyo.gif);
+}
+
+.status-button.completed:hover,
+.status-button.completed.on {
+    background-image: url(https://media.tenor.com/MWzk-xJxQF0AAAAM/aoko-aozaki-mahoyo.gif);
+}
+
+/*ON HOLD BANNER BUTTON*/
+.status-button.onhold {
+    background-image: url(https://media.tenor.com/gvRZQX7Hw0QAAAAM/shiki-ryougi-blink.gif);
+}
+
+.status-button.onhold:hover,
+.status-button.onhold.on {
+    background-image: url(https://media.tenor.com/AqoIHF6fvlkAAAAM/kara-no-kyoukai-the-garden-of-sinners.gif);
+}
+
+/*DROPPED BANNER BUTTON*/
+.status-button.dropped {
+    background-image: url(https://media.tenor.com/WNrq2Leqb40AAAAM/ryougi-shiki-kara-no-kyoukai.gif);
+}
+
+.status-button.dropped:hover,
+.status-button.dropped.on {
+    background-image: url(https://media.tenor.com/DKVGhSMa120AAAAM/anime-smile.gif);
+}
+
+/*PLANNED BANNER BUTTON*/
+.status-button.plantowatch,
+.status-button.plantoread {
+    background-image: url(https://media.tenor.com/oitnr5tawd0AAAAM/anime-surprise.gif);
+}
+
+.status-button.plantowatch:hover,
+.status-button.plantowatch.on,
+.status-button.plantoread:hover,
+.status-button.plantoread.on {
+    background-image: url(https://media.tenor.com/cGkseWZQZRYAAAAM/anime-happiness.gif);
+}
+
+/* END */
+
+/* Estilo de Menu e Rodapé */
+footer:before,
+footer:after {
+    background-size: contain !important;
+    background-position: left bottom !important;
+}
+
+footer:before {
+    left: -3%;
+    width: 25% !important;
+}
+
+footer:after {
+    right: 0%;
+    width: 20% !important;
+}
+
+/* Estilo das Tabelas de Anime/Manga */
+.list-unit {
+    background-color: var(--dark-bg);
+}
+
+.status-menu-container {
+    background-color: var(--semi-dark-bg);
+}
+
+.list-table .list-table-data {
+    background-color: var(--light-bg) !important;
+}
+
+.list-table .list-table-data:hover {
+    background-color: var(--hover-bg) !important;
+}
+
+.list-menu-float .icon-menu {
+    background-color: var(--semi-dark-bg) !important;
+}
+
+.header {
+    background: var(--header-bg) !important;
+}
+
+/* Estilo de Cursor Customizado */
+body * {
+    cursor: url(https://i.imgur.com/j9ZWzyT.png), auto !important;
+}
+
+/* Filtro do Menu Avançado */
+#advanced-options {
+    background-image: url(https://i.imgur.com/h0VRsRc.png) !important;
+}
+
+/* Logo do MAL */
+.header .header-title {
+    background-image: url(https://imgur.com/E7zWfiY.png) !important;
+}
